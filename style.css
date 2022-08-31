@@ -378,4 +378,11 @@ form input, form textarea {
 .copyright i {
     color: #ff004f;
 }
+
+/*------------------CSS for small screens--------------------*/
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(Images/);
+    }
 }
