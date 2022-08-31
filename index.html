@@ -17,13 +17,16 @@
             <nav>
                 <img src="Images/logo.jpg" class="logo">
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -81,7 +84,7 @@
 
     <!------------Services---------->
 
-    <div id="service">
+    <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -89,21 +92,21 @@
                     <i class="fa-solid fa-code"></i>
                     <h2>Web design</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus natus aspernatur dolorum magni minima illum voluptatum animi amet soluta nesciunt, qui ipsum, laboriosam accusamus unde consequatur autem, quae beatae. A.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#" class="btn">Learn more</a>
                 </div>
 
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>UI/UX design</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus natus aspernatur dolorum magni minima illum voluptatum animi amet soluta nesciunt, qui ipsum, laboriosam accusamus unde consequatur autem, quae beatae. A.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#" class="btn">Learn more</a>
                 </div>
 
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>App design</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus natus aspernatur dolorum magni minima illum voluptatum animi amet soluta nesciunt, qui ipsum, laboriosam accusamus unde consequatur autem, quae beatae. A.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#" class="btn">Learn more</a>
                 </div>
             </div>
         </div>
@@ -164,14 +167,14 @@
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
 
-                    <a href="Images/Olulanke Mainasara CV.pdf" download class="btn btn2">Download CV</a>
+                    <a href="Images/Olulanke Mainasara CV.pdf" download class="btn">Download CV</a>
                 </div>
 
                 <div class="contact-right">
                     <form>
-                        <input type="text" name="fullName" placeholder="Your Fullname" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <input type="text" name="Fullname" placeholder="Your Fullname" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message / Request"></textarea>
                         <button type="submit" class="sub-btn">Submit</button>
                     </form>
                 </div>
@@ -199,6 +202,20 @@
 
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-content"); 
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"
         }
 
     </script>
