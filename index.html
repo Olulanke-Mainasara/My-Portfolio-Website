@@ -42,9 +42,59 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
                     <p>The Department of Psychological Sciences represents the combined strengths of the fields of psychology and communication sciences. We offer two undergraduate majors: Psychology and Communication Sciences, as well as two minors: Psychology and Communication for Health Professionals. Students can tailor their experience to meet their own career and educational goals. This can be accomplished in many ways, including through independent studies and experiential learning opportunities with faculty, honors Capstone projects, and Pathways. Pathways provides student with guidance to structure coursework based on their specific career interests. Pathways include Clinical, Lifespan Development, Pre-Health, Neuroscience, and Research. Students may choose several Pathways that meet their needs.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-content" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-content");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-content"); 
+        }
+        
+    </script>
 </body>
 </html>
