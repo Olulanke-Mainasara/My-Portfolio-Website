@@ -492,6 +492,29 @@ nav .fa-solid {
         margin-right: 20px;
     }
 
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 100px;
+    }
+
+    .services-list div {
+        transition: background 1s, transform 1s;
+    }
+
+    .services-list div:hover{
+        background: #ff004f;
+        transform: scale(1.1);
+    }
+    
+    .work img {
+        transition: transform 1s;
+    }
+    
+    .layer {
+        transition: height 0.9s;
+    }
+
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
