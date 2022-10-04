@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: black;
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1 {
+    color: white;
+    font-size: 150px;
+    color: #ff004f;
+}
+
+h1 i {
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+}
