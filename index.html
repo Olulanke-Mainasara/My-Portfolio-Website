@@ -9,14 +9,14 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://kit.fontawesome.com/e7493c98a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aae4243485.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="Images/My Brand 2.png" class="logo">
+            <nav id="nav">
+                <img src="Images/My Brand 1.png" class="logo">
 
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
@@ -34,6 +34,7 @@
                 <p>Front-end Web Developer</p>
                 <h1>Hi, I'm <span>Mainasara</span><br>Olulanke From Nigeria</h1>
                 <a href="#contact" class="btn" id="comment">Say hello <i class="fa-solid fa-comment"></i></a>
+                <a href="#about" id="moved"><i class="fa-solid fa-arrow-down fa-bounce"></i></a>
             </div>
         </div>
     </div>
@@ -153,7 +154,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> mainasara.o.olulanke@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>  +2348181120601</p>
+                    <p id="pcontact"><i class="fa-solid fa-square-phone"></i>  +2348181120601</p>
 
                     <div class="social-icons">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -162,7 +163,7 @@
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
 
-                    <a href="Images/Olulanke Mainasara CV.pdf" download class="btn"><i class="fa-solid fa-file-arrow-down" id="cv"></i> Download CV</a>
+                    <a href="Images/Olulanke Mainasara CV.pdf" download class="btn" id="cv"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
                 </div>
 
                 <div class="contact-right">
@@ -175,6 +176,8 @@
                     <span id="msg"></span>
                 </div>
             </div>
+
+            <a href="#header" id="moveu"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
         </div>
 
         <div class="copyright">
@@ -208,16 +211,15 @@
 
     <script>
 
-        var sidemenu = document.getElementById("sidemenu")
+        var sidemenu = document.getElementById("sidemenu");
+        var nav = document.getElementById("nav");
 
         function openmenu(){
             sidemenu.style.right = "0";
-            sidemenu.style.display = "block";
         }
 
         function closemenu(){
             sidemenu.style.right = "-200px";
-            sidemenu.style.display = "none";
         }
 
     </script>
