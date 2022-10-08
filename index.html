@@ -8,7 +8,9 @@
     <title>Mainasara's Portfolio Website</title>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/aae4243485.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,7 +32,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
-            <div class="header-text">
+            <div class="header-text" data-aos="zoom-in" data-aos-duration="1500">
                 <p>Front-end Web Developer</p>
                 <h1>Hi, I'm <span>Mainasara</span><br>Olulanke From Nigeria</h1>
                 <a href="#contact" class="btn" id="comment">Say hello <i class="fa-solid fa-comment"></i></a>
@@ -44,10 +46,10 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1" data-aos="fade-right" data-aos-duration="1500">
                     <img src="Images/user4.gif">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2" data-aos="fade-left" data-aos-duration="1500">
                     <h1 class="sub-title">About me</h1>
                     <p>I am a passionate Frontend web/app designer proficient in the use of HTML, CSS, JavaScript and Python and an aspiring full-stack developer with the aim of bringing ideas to life digitally. I'm always curious and I really love to find out the "Why" of things and concepts. I'm very well able to build functional web applications and easily convert UI designs into pixel perfect responsive web pages. I am a fast learner, a dilligent worker and can adapt to a new technology as quickly as the need may be. My aim is to one day be able to stand among the great creators who have made an impact in the big and little they have done, starting from anything as little as a landing page to big things like a fully functional responsive web application.</p>
 
@@ -88,18 +90,11 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <i class="fa-solid fa-code"></i>
                     <h2>Web design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus natus aspernatur dolorum magni minima illum voluptatum animi amet soluta nesciunt, qui ipsum, laboriosam accusamus unde consequatur autem, quae beatae. A.</p>
-                    <a href="#" class="btn">Learn more</a>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus natus aspernatur dolorum magni minima illum voluptatum animi amet soluta nesciunt, qui ipsum, laboriosam accusamus unde consequatur autem, quae beatae. A.</p>
-                    <a href="#" class="btn">Learn more</a>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design" class="btn">Learn more</a>
                 </div>
             </div>
         </div>
@@ -111,7 +106,7 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1> 
             <div class="work-list">
-                <div class="work">
+                <div class="work" data-aos="fade-right" data-aos-duration="1500">
                     <img src="Images/Portrait.jpg">
                     <div class="layer">
                         <h3>The Watchers.</h3>
@@ -121,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work" data-aos="fade-up" data-aos-duration="1500">
                     <img src="Images/The Answer.png">
                     <div class="layer">
                         <h3>The Answer.<br>(Simple Interest Calculator)</h3>
@@ -131,7 +126,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work" data-aos="fade-left" data-aos-duration="1500">
                     <img src="Images/Grimvies.png">
                     <div class="layer">
                         <h3>Grimvies.</h3>
@@ -151,7 +146,7 @@
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left" data-aos="fade-down" data-aos-duration="1500">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> mainasara.o.olulanke@gmail.com</p>
                     <p id="pcontact"><i class="fa-solid fa-square-phone"></i>  +2348181120601</p>
@@ -166,7 +161,7 @@
                     <a href="Images/Olulanke Mainasara CV.pdf" download class="btn" id="cv"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
                 </div>
 
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-up" data-aos-duration="1500">
                     <form name="Contacts" method="POST" data-netlify="true">
                         <input type="text" name="Fullname" placeholder="Your Fullname" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
@@ -184,6 +179,10 @@
             <p><i class="fa-regular fa-copyright"></i> 2022 Mainasara. Made with <i class="fa-solid fa-heart"></i> by Grim_redd.</p>
         </div>
     </div>
+
+    <script>
+        AOS.init();
+    </script>
 
     <!---------------Script for changing the About me tabs-------------->
 

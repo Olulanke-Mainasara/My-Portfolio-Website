@@ -76,7 +76,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin: 15% auto 0;
+    margin: 18% auto 0;
     font-size: 30px;
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid gray;
@@ -97,6 +97,7 @@ nav ul li a:hover::after {
 }
 
 #comment {
+    margin-top: 15px;
     border-radius: 15px;
 }
 
@@ -115,6 +116,11 @@ nav ul li a:hover::after {
     font-size: 40px;
     color: #ff004f;
     width: fit-content;
+    transition: color 0.5s;
+}
+
+#moved:hover {
+    color: white;
 }
 
 /*--------------------about----------------------*/ 
@@ -209,11 +215,15 @@ nav ul li a:hover::after {
 }
 
 .services-list div {
+    margin: auto;
+    width: 45%;
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     transition: background 0.5s, transform 0.5s;
 }
 
@@ -235,14 +245,14 @@ nav ul li a:hover::after {
 .services-list div a {
     text-decoration: none;
     color: white;
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 15px;
+    margin: 20px auto 0;
     display: inline-block;
 }
 
 .services-list div:hover{
     background: #ff004f;
-    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
 .services-list div:hover a {
@@ -545,6 +555,7 @@ nav .fa-solid {
     }
 
     .services-list div {
+        width: 100%;
         -webkit-transition: background 1s, transform 1s;
         transition: background 1s, transform 1s;
     }
@@ -570,6 +581,10 @@ nav .fa-solid {
     #pcontact {
         color: white;
         text-decoration: none;
+    }
+
+    #moveu:hover {
+        color: #ff004f;
     }
 
     .copyright {
