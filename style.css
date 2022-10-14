@@ -68,6 +68,29 @@ nav ul li a {
     position: relative;
 }
 
+#navcv {
+    margin-right: 15px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+#navcv:hover {
+    background: #ff004f;
+}
+
+#navcv i {
+    transition: color 0.5s;
+}
+
+#navcv:hover i {
+    color: white;
+}
+
 nav ul li a::after {
     content: '';
     width: 0;
@@ -89,13 +112,18 @@ nav ul li a:hover::after {
     align-items: center;
     width: 100%;
     height: 100vh;
-    gap: 80px;
 }
 
 .header-text {
     font-size: 30px;
+    padding: 10vh 3vw 5vh;
     background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff004f;
     width: fit-content;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .header-text h1 {
@@ -205,7 +233,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #b54769;
+    color: #ff004f;
     font-size: 14px;
 }
 
@@ -360,16 +388,6 @@ nav ul li a:hover::after {
     background: #ff004f;
 }
 
-#cv i {
-    color: #ff004f;
-    font-size: 20px;
-    transition: color 0.5s;
-}
-
-#cv:hover i {
-    color: white;
-}
-
 /*-------------------Contact--------------*/
 
 #contact {
@@ -451,8 +469,18 @@ form input, form textarea {
     border-radius: 6px; 
 }
 
+#cv i, #send i {
+    color: #ff004f;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+#cv:hover i, #send:hover i {
+    color: white;
+}
+
 #moveu {
-    margin: 25px auto 0;
+    margin: 25px 0;
     display: block;
     font-size: 40px;
     color: #ff004f;
@@ -487,19 +515,15 @@ form input, form textarea {
     #header {
         background-image: url(Images/My\ Logo\ 1.png);
         background-size: cover;
-        border: 1px solid blue;
     }
 
     .containeralpha {
-        display: inline-block;
-        padding: 0px 10% 10px;
-        border: 1px solid red;
+        padding: 0px 10%;
     }
 
     #headertandi {
         width: 100%;
-        height: 87vh;
-        border: 1px solid orange;
+        height: 100vh;
     }
 
     .header-text {
@@ -520,12 +544,11 @@ form input, form textarea {
     }
 
     nav {
-        position: static;
-        width: 100%;
+        position: fixed;
+        width: 80%;
         background: black;
         -webkit-backdrop-filter: none;
 	    backdrop-filter: none;
-        border: 1px solid green;
     }
 
     nav i {

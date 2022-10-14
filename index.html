@@ -26,6 +26,7 @@
                     <li><a href="#services"><i class="fa-solid fa-desktop"></i> Services</a></li>
                     <li><a href="#portfolio"><i class="fa-solid fa-book"></i> Portfolio</a></li>
                     <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                    <a href="Images/Olulanke Mainasara C.V.pdf" id="navcv"><i class="fa-solid fa-file-arrow-down"></i> Download C.V</a>
                     <i class="fa-solid fa-xmark" id="closemm" onclick="closemenu()"></i>
                 </ul>
 
@@ -33,14 +34,14 @@
             </nav>
 
             <div id="headertandi">
-                <div class="header-text" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                <div class="header-text" data-aos="fade-right" data-aos-duration="1500">
                     <p>Front-end Web Developer</p>
                     <h1>Hi, I'm <span>Mainasara</span><br>Olulanke From Nigeria</h1>
-                    <a href="#contact" class="btn" id="comment">Say hello <i class="fa-solid fa-comment"></i></a>
+                    <a href="#contact" class="btn" id="comment">Hire me / Say hello <i class="fa-solid fa-comment"></i></a>
                     <a href="#about" id="moved"><i class="fa-solid fa-arrow-down fa-bounce"></i></a>
                 </div>
     
-                <div class="header-img" data-aos="slide-right" data-aos-duration="1500">
+                <div class="header-img" data-aos="fade-right" data-aos-duration="1500">
                     <i class="fa-solid fa-shuttle-space"></i>
                 </div>
             </div>
@@ -55,7 +56,7 @@
                 <div class="about-col-1" data-aos="fade-right" data-aos-duration="1500">
                     <img src="Images/user4.gif">
                 </div>
-                <div class="about-col-2" data-aos="fade-left" data-aos-duration="1500">
+                <div class="about-col-2" id="about-text" data-aos="fade-left" data-aos-duration="1500">
                     <h1 class="sub-title">About me</h1>
                     <p>I am a passionate Frontend web/app designer proficient in the use of HTML, CSS, JavaScript and Python and an aspiring full-stack developer with the aim of bringing ideas to life digitally. I'm always curious and I really love to find out the "Why" of things and concepts. I'm very well able to build functional web applications and easily convert UI designs into pixel perfect responsive web pages. I am a fast learner, a dilligent worker and can adapt to a new technology as quickly as the need may be. My aim is to one day be able to stand among the great creators who have made an impact in the big and little they have done, starting from anything as little as a landing page to big things like a fully functional responsive web application.</p>
 
@@ -112,7 +113,7 @@
             <h1 class="sub-title">My Work</h1> 
             <div class="work-list">
                 <div class="work" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="Images/Portrait.jpg">
+                    <img src="Images/The Watchers.png">
                     <div class="layer">
                         <h3>The Watchers.</h3>
                         <p>It is a full encyclopedia website aimed at delivering first hand news from all over the world and also acts as a history bank for all those seeking answers to the different questions fueled by their curiosity. It is also a place for researchers and professional individuals to share their ideas with the world and engage in intelligent and enlightening conversations. You should definitely check it out</p>
@@ -161,7 +162,7 @@
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
 
-                    <a href="Images/Olulanke Mainasara CV.pdf" download class="btn" id="cv"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                    <a href="Images/Olulanke Mainasara C.V.pdf" class="btn" id="cv"><i class="fa-solid fa-file-arrow-down"></i> Download C.V</a>
                 </div>
 
                 <div class="contact-right" data-aos="fade-up" data-aos-duration="1500">
@@ -169,7 +170,7 @@
                         <input type="text" name="Fullname" placeholder="Your Fullname" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message / Request" rows="10" placeholder="Your Message / Request"></textarea>
-                        <button type="submit" class="sub-btn">Send <i class="fa-solid fa-shuttle-space"></i></button>
+                        <button type="submit" class="sub-btn" id="send">Send <i class="fa-solid fa-shuttle-space"></i></button>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -248,6 +249,24 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+    <!--------------Script for changing some animation flows-------------->
+
+    <script>
+        var works = document.querySelectorAll(".work");
+        var abouttext = document.getElementById("about-text");
+
+        if (window.innerWidth <= 1000) {
+            changeworkflow();
+        }
+
+        function changeworkflow() {
+            for(var i = 0; i < works.length; i++) {
+                works[i].setAttribute("data-aos", "fade-right");
+            }
+            abouttext.setAttribute("data-aos", "fade-right");
+        }
     </script>
 </body>
 </html>
