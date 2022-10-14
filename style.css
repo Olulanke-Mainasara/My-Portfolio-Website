@@ -17,13 +17,17 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(Images/My\ Brand\ 2.png);
     background-size: cover;
     background-position: center;
 }
 
+.containeralpha {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
-    padding: 10px 10%;
+    padding: 0px 10% 10px;
 }
 
 nav {
@@ -45,6 +49,10 @@ nav {
 .logo {
     width: 140px;
     border-radius: 15px;
+}
+
+nav i {
+    color: #ff004f;
 }
 
 nav ul li {
@@ -75,16 +83,19 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+#headertandi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 80px;
+}
+
 .header-text {
-    margin: 18% auto 0;
     font-size: 30px;
     background: rgba(0, 0, 0, 0.1);
-    border: 1px solid gray;
-    -webkit-backdrop-filter: blur(40px);
-    backdrop-filter: blur(40px);
-    padding: 30px;
     width: fit-content;
-    border-radius: 15px;
 }
 
 .header-text h1 {
@@ -93,6 +104,11 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
+    color: #ff004f;
+}
+
+.header-img i {
+    font-size: 500px;
     color: #ff004f;
 }
 
@@ -356,6 +372,10 @@ nav ul li a:hover::after {
 
 /*-------------------Contact--------------*/
 
+#contact {
+    padding-top: 90px;
+}
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -458,7 +478,7 @@ form input, form textarea {
 
 /*------------------CSS for small screens--------------------*/
 
-nav .fa-solid {
+#openmm, #closemm {
     display: none;
 }
 
@@ -467,17 +487,36 @@ nav .fa-solid {
     #header {
         background-image: url(Images/My\ Logo\ 1.png);
         background-size: cover;
+        border: 1px solid blue;
+    }
+
+    .containeralpha {
+        display: inline-block;
+        padding: 0px 10% 10px;
+        border: 1px solid red;
+    }
+
+    #headertandi {
+        width: 100%;
+        height: 87vh;
+        border: 1px solid orange;
     }
 
     .header-text {
-        margin-top: 30%;
         font-size: 16px;
         background: rgba(0, 0, 0, 0.1);
         border: 1px solid gray;
+        backdrop-filter: blur(20px);
+        padding: 20px 20px 10px;
+        border-radius: 15px;
     }
 
     .header-text h1 {
         font-size: 30px;
+    }
+
+    .header-img {
+        display: none;
     }
 
     nav {
@@ -486,14 +525,20 @@ nav .fa-solid {
         background: black;
         -webkit-backdrop-filter: none;
 	    backdrop-filter: none;
+        border: 1px solid green;
     }
 
-    nav .fa-solid {
+    nav i {
+        color: white;
+    }
+
+    #openmm, #closemm {
         display: block;
         font-size: 25px;
+        color: white;
     }
 
-    nav .fa-bars {
+    #openmm {
         padding-right: 20px;
     }
 
@@ -514,7 +559,7 @@ nav .fa-solid {
         margin: 25px; 
     }
 
-    nav ul .fa-solid {
+    #closemm {
         position: absolute;
         top: 25px;
         left: 25px;

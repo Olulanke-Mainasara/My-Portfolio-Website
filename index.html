@@ -16,27 +16,33 @@
 
 <body>
     <div id="header">
-        <div class="container">
+        <div class="containeralpha">
             <nav id="nav">
                 <img src="Images/My Brand 1.png" class="logo">
 
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-desktop"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-book"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="closemm" onclick="closemenu()"></i>
                 </ul>
 
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" id="openmm" onclick="openmenu()"></i>
             </nav>
 
-            <div class="header-text" data-aos="fade-down" data-aos-duration="1500">
-                <p>Front-end Web Developer</p>
-                <h1>Hi, I'm <span>Mainasara</span><br>Olulanke From Nigeria</h1>
-                <a href="#contact" class="btn" id="comment">Say hello <i class="fa-solid fa-comment"></i></a>
-                <a href="#about" id="moved"><i class="fa-solid fa-arrow-down fa-bounce"></i></a>
+            <div id="headertandi">
+                <div class="header-text" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                    <p>Front-end Web Developer</p>
+                    <h1>Hi, I'm <span>Mainasara</span><br>Olulanke From Nigeria</h1>
+                    <a href="#contact" class="btn" id="comment">Say hello <i class="fa-solid fa-comment"></i></a>
+                    <a href="#about" id="moved"><i class="fa-solid fa-arrow-down fa-bounce"></i></a>
+                </div>
+    
+                <div class="header-img" data-aos="slide-right" data-aos-duration="1500">
+                    <i class="fa-solid fa-shuttle-space"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -91,7 +97,7 @@
             <div class="services-list">
                 <div data-aos="fade-up" data-aos-duration="1500">
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web design</h2>
+                    <h2>Front-end Web Design</h2>
                     <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
                     <a href="https://en.wikipedia.org/wiki/Web_design" class="btn">Learn more</a>
                 </div>
@@ -135,8 +141,6 @@
                     </div>
                 </div>
             </div>  
-            
-            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
@@ -165,7 +169,7 @@
                         <input type="text" name="Fullname" placeholder="Your Fullname" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message / Request" rows="10" placeholder="Your Message / Request"></textarea>
-                        <button type="submit" class="sub-btn">Submit</button>
+                        <button type="submit" class="sub-btn">Send <i class="fa-solid fa-shuttle-space"></i></button>
                     </form>
                     <span id="msg"></span>
                 </div>
