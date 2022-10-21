@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    height: 60%;
+    padding: 20px;
+    background: #262626;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 50px;
+}
+
+.container p {
+    font-size: 25px;
+}
+
+.container i {
+    color: #ff004f;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 70px;
+    border: 1px solid #ff004f;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: color 0.5s, background 0.5s;
+}
+
+.container a:hover {
+    background: white;
+    color: #ff004f;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .container h1 {
+        font-size: 45px;
+    }
+
+    .container a {
+        padding: 0px 70px;
+        margin-top: 15px;
+    }
+
+    .container a:hover {
+        background: none;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .container p {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .container a {
+        padding: 0px 40px;
+        margin-top: 20px;
+    }
+}
