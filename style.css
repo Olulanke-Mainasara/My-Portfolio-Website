@@ -470,7 +470,7 @@ nav ul li a:hover::after {
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    background: black;
+    background: none;
     transition: background 0.5s;
 }
 
@@ -636,7 +636,7 @@ form input, form textarea {
     }
 
     #navcv {
-        margin-top: 20px;
+        margin: 20px auto 0;
     }
 
     nav ul li a:hover::after {
