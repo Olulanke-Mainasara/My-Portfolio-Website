@@ -12,6 +12,7 @@ html {
 body {
     background: black;
     color: white;
+    overflow-x: hidden;
 }
 
 #header {
@@ -357,13 +358,25 @@ nav ul li a:hover::after {
     bottom: 0;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 16px;
+    transition: height 0.5s;
+}
+
+.layer .work-trailer {
+    width: 100%;
+    height: 180px;
+    margin: 8px 10px 0;
+}
+
+.layer .work-description {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
     text-align: center;
-    font-size: 16px;
-    transition: height 0.5s;
+    padding: 0 20px;
 }
 
 .layer h3 {
@@ -376,7 +389,7 @@ nav ul li a:hover::after {
     color: #ff004f;
     text-decoration: none;
     font-size: 18px;
-    line-height: 60px;
+    line-height: 50px;
     background: white;
     width: fit-content;
     height: fit-content;
@@ -717,6 +730,26 @@ form input, form textarea {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
+
+    .layer a {
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 0px 15px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .layer {
+        gap: 20px;
+    }
+
+    .layer h3 {
+        margin-bottom: 10px;
+    }
+
+    .layer a {
+        line-height: 40px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -742,6 +775,11 @@ form input, form textarea {
         width: 100%;
     }
 
+    .layer a {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
@@ -758,23 +796,11 @@ form input, form textarea {
 }
 
 @media screen and (max-width: 300px) {
-    .work-list {
-    }
-    .layer {
-        padding: 0 20px;
-    }
-
     .contact-left p {
         font-size: 16px;
     }
 
     .contact-left p i {
         font-size: 20px;
-    }
-}
-
-@media screen and (max-height: 600px) {
-    .layer {
-        padding: 0 20px;
     }
 }
