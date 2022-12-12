@@ -380,6 +380,7 @@ nav ul li a:hover::after {
 }
 
 .layer h3 {
+    font-size: 32px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -731,6 +732,10 @@ form input, form textarea {
         flex-basis: 100%;
     }
 
+    .layer h3 {
+        font-size: 24px;
+    }
+
     .layer a {
         margin-top: 10px;
         font-size: 15px;
@@ -744,6 +749,7 @@ form input, form textarea {
     }
 
     .layer h3 {
+        font-size: 24px;
         margin-bottom: 10px;
     }
 
@@ -771,13 +777,23 @@ form input, form textarea {
         margin-bottom: 30px;
     }
 
+    .sub-title-p, .services-list div p {
+        font-size: 16px;
+    }
+
     .services-list div {
         width: 100%;
+    }
+
+    .layer h3 {
+        font-size: 32px;
+        margin: 20px 0;
     }
 
     .layer a {
         margin-top: 20px;
         font-size: 18px;
+        line-height: 50px;
     }
 
     .contact-left, .contact-right {
