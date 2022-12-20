@@ -805,6 +805,12 @@ form input, form textarea {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .contact-left p {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .header-text {
         top: 28%;
@@ -812,10 +818,6 @@ form input, form textarea {
 }
 
 @media screen and (max-width: 300px) {
-    .contact-left p {
-        font-size: 16px;
-    }
-
     .contact-left p i {
         font-size: 20px;
     }
