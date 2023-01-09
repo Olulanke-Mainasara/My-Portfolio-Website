@@ -714,7 +714,7 @@ form input, form textarea {
     }
 
     #moveu {
-        margin: 50px 0 10px;
+        margin: 50px auto 10px;
     }
 
     #moveu:hover {
@@ -804,7 +804,13 @@ form input, form textarea {
     }
 
     #moveu {
-        margin: 40px 0 10px;
+        margin: 40px auto 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-left p {
+        font-size: 16px;
     }
 }
 
@@ -815,10 +821,6 @@ form input, form textarea {
 }
 
 @media screen and (max-width: 300px) {
-    .contact-left p {
-        font-size: 16px;
-    }
-
     .contact-left p i {
         font-size: 20px;
     }
