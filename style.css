@@ -178,6 +178,7 @@ nav ul li a:hover::after {
 
 .row {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -298,28 +299,6 @@ nav ul li a:hover::after {
     font-size: 18px;
 }
 
-.services-list div a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    margin: 20px auto 0;
-    display: inline-block;
-}
-
-#learnmorei {
-    font-size: 20px;
-    margin: 0;
-    transition: color 0.5s;
-}
-
-.services-list div a:hover {
-    background: #ff004f;
-}
-
-.services-list div a:hover #learnmorei {
-    color: white;
-}
-
 /*----------------------Portfolio-------------------*/
 
 #portfolio {
@@ -411,22 +390,6 @@ nav ul li a:hover::after {
     border: none;
 }
 
-.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
-}
-
-.btn:hover {
-    background: #ff004f;
-}
-
 /*-------------------Contact--------------*/
 
 #contact {
@@ -473,25 +436,21 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
-.contact-left .btn {
+.btn {
     display: inline-block;
-}
-
-.sub-btn {
-    display: inline-block;
-    margin-top: 20px;
+    margin: 50px auto;
     width: fit-content;
     border: 1px solid #ff004f;
-    font-size: 18px;
-    padding: 14px 60px;
+    padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: white;
     background: none;
+    font-weight: 400;
     transition: background 0.5s;
 }
 
-.sub-btn:hover {
+.btn:hover {
     background: #ff004f;
     cursor: pointer;
 }
@@ -510,6 +469,10 @@ form input, form textarea {
     color: white;
     font-size: 18px;
     border-radius: 6px; 
+}
+
+#send {
+    margin-top: 20px;
 }
 
 #cv i, #send i {
@@ -551,6 +514,56 @@ form input, form textarea {
 
 #openmm, #closemm {
     display: none;
+}
+
+@media screen and (min-width: 1920px) {
+    .sub-title-p {
+        font-size: 24px;
+    }
+
+    .tab-links {
+        font-size: 24px;
+    }
+
+    .tab-contents ul li {
+        font-size: 24px;
+    }
+    
+    .tab-contents ul li span {
+        font-size: 20px;
+    }
+
+    .services-list div h2 {
+        font-size: 45px;
+    }
+        
+    .services-list div p {
+        font-size: 24px;
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+
+    .layer p {
+        font-size: 20px;
+    }
+
+    .contact-left p {
+        font-size: 25px;
+    }
+    
+    .contact-left p i {
+        font-size: 30px;
+    }
+
+    form input, form textarea {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -683,34 +696,12 @@ form input, form textarea {
         width: 70%;
     }
 
-    .services-list div a:hover {
-        background: none;
-    }
-    
-    .services-list div a:hover #learnmorei {
-        color: #ff004f;
-    }
-
-    .work img {
-        transition: transform 1s;
-    }
-    
-    .layer {
-        transition: height 0.9s;
-        font-size: 14px;
-    }
-
     .contact-left {
         flex-basis: 35%;
     }
 
     .contact-right {
         flex-basis: 60%;
-    }
-
-    #pcontact {
-        color: white;
-        text-decoration: none;
     }
 
     #moveu {
@@ -731,33 +722,22 @@ form input, form textarea {
         top: 36%;
     }
 
+    .container {
+        padding: 0px 5% 10px;
+    }
+
     .contact-left, .contact-right {
         flex-basis: 100%;
-    }
-
-    .layer h3 {
-        font-size: 24px;
-    }
-
-    .layer a {
-        margin-top: 10px;
-        font-size: 15px;
-        padding: 0px 15px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .layer {
-        gap: 20px;
+    .layer .work-trailer {
+        height: 160px;
     }
 
     .layer h3 {
         font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .layer a {
-        line-height: 40px;
     }
 }
 
@@ -788,19 +768,12 @@ form input, form textarea {
         width: 100%;
     }
 
+    .layer .work-trailer {
+        height: 200px;
+    }
+
     .layer h3 {
         font-size: 32px;
-        margin: 20px 0;
-    }
-
-    .layer a {
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 50px;
-    }
-
-    .contact-left, .contact-right {
-        flex-basis: 100%;
     }
 
     #moveu {
@@ -820,8 +793,82 @@ form input, form textarea {
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
+    .containeralpha {
+        width: 100%;
+        padding: 0px 5%;
+    }
+
+    .header-text {
+        width: 92%;
+        padding: 15px 10px 10px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+        margin: 8px 0 5px;
+    }
+
+    #comment {
+        padding: 14px 35px;
+    }
+
+    .container {
+        padding: 0px 12px 10px;
+    }
+
+    .about-col-2 {
+    }
+
+    .sub-title {
+        font-size: 50px;
+    }
+
+    .sub-title-p {
+        font-size: 14px;
+    }
+
+    .tab-titles {
+        justify-content: center;
+    }
+
+    .tab-links {
+        font-size: 16px;
+    }
+    
+    .tab-contents ul li {
+        font-size: 16px;
+    }
+    
+    .tab-contents ul li span {
+        font-size: 14px;
+    }
+
+    .layer .work-trailer {
+        height: 160px;
+    }
+
+    .services-list div {
+        padding: 20px;
+    }
+
+    .work-description p {
+        font-size: 14px;
+    }
+
+    .contact-left p {
+        font-size: 0.85rem;
+    }
+
     .contact-left p i {
         font-size: 20px;
+    }
+
+    .contact-left, .contact-right {
+        text-align: center;
     }
 }
