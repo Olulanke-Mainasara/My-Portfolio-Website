@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic Neue:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 body {
@@ -41,6 +43,7 @@ section {
 
 .container i {
     color: #ff004f;
+    transition: color 0.5s
 }
 
 .container a {
@@ -51,12 +54,15 @@ section {
     border-radius: 30px;
     font-size: 20px;
     margin-top: 15px;
-    transition: color 0.5s, background 0.5s;
+    transition: background 0.5s;
 }
 
 .container a:hover {
-    background: white;
-    color: #ff004f;
+    background: #ff004f;
+}
+
+.container a:hover i {
+    color: white;
 }
 
 @media screen and (max-width: 1200px) {
