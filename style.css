@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic Neue:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -13,11 +14,14 @@ body {
     background: black;
     color: white;
     overflow-x: hidden;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 #header {
     width: 100%;
     height: 100vh;
+    max-width: 1920px;
+    margin: auto;
     background-size: cover;
     background-position: center;
 }
@@ -134,6 +138,7 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: #ff004f;
+    font-weight: 400;
 }
 
 .header-img i {
@@ -174,6 +179,9 @@ nav ul li a:hover::after {
 #about {
     padding: 95px 0;
     color: #ababab;
+    max-width: 1920px;
+    margin: auto;
+    scroll-margin-top: 95px;
 }
 
 .row {
@@ -204,6 +212,7 @@ nav ul li a:hover::after {
 
 .sub-title span {
     color: #ff004f;
+    font-weight: 400;
 }
 
 .sub-title-p {
@@ -212,12 +221,12 @@ nav ul li a:hover::after {
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 30px;
 }
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 27px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -247,6 +256,7 @@ nav ul li a:hover::after {
 .tab-contents ul li span {
     color: #ff004f;
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 .tab-contents {
@@ -260,7 +270,10 @@ nav ul li a:hover::after {
 /*---------------------------Services-------------*/
 
 #services {
-    padding: 80px 0;
+    padding: 95px 0;
+    max-width: 1920px;
+    margin: auto;
+    scroll-margin-top: 95px;
 }
 
 .services-list {
@@ -291,7 +304,8 @@ nav ul li a:hover::after {
 
 .services-list div h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-family: sans-serif;
+    font-weight: 300;
     margin-bottom: 15px;
 }
 
@@ -302,14 +316,21 @@ nav ul li a:hover::after {
 /*----------------------Portfolio-------------------*/
 
 #portfolio {
-    padding: 80px 0;
+    padding: 95px 0;
+    max-width: 1920px;
+    margin: auto;
+    scroll-margin-top: 15px;
 }
 
 .work-list {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 60px;
-    margin-top: 50px;
+    grid-gap: 60px; */
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    max-width: 1440px;
+    margin: 50px auto 0;
 }
 
 .work {
@@ -318,45 +339,49 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
-.layer {
+.layer, .revLayer {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.layer .work-trailer {
+.revLayer {
+    flex-direction: row-reverse;
+}
+
+.layer .work-trailer, .revLayer .work-trailer {
     width: 100%;
-    height: 200px;
+    height: 100%;
     transition: all 0.5s;
 }
 
 .work-trailer:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
-.layer .work-description {
+.layer .work-description, .revLayer .work-description {
     display: flex;
     gap: 40px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 30px;
+    flex-basis: 50%;
 }
 
-.layer h3 {
-    font-size: 32px;
+.layer h3, .revLayer h3 {
+    font-size: 35px;
+    font-family: sans-serif;
     font-weight: 300;
     letter-spacing: 3px;
 }
 
-.layer p {
+.layer p, .revLayer p {
     font-size: 17px;
     filter: brightness(70%);
 }
@@ -364,7 +389,6 @@ nav ul li a:hover::after {
 .workLinks {
     display: flex;
     gap: 30px;
-    margin-bottom: 30px;
 }
 
 .workLinks a {
@@ -384,16 +408,30 @@ nav ul li a:hover::after {
     transition: all 0.5s;
 }
 
+#sWorkLinks i {
+    background: white;
+    color: black;
+}
+
 .workLinks i:hover {
     background: white;
     color: black;
     border: none;
 }
 
+#sWorkLinks i:hover {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
 /*-------------------Contact--------------*/
 
 #contact {
     padding-top: 90px;
+    max-width: 1920px;
+    margin: auto;
+    scroll-margin-top: 90px;
 }
 
 .contact-left {
@@ -409,8 +447,9 @@ nav ul li a:hover::after {
 }
 
 .contact-left p {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 30px;
+    font-family: sans-serif;
 }
 
 .contact-left p i {
@@ -468,6 +507,7 @@ form input, form textarea {
     margin: 15px 0;
     color: white;
     font-size: 18px;
+    font-family: 'Comic Neue', sans-serif;
     border-radius: 6px; 
 }
 
@@ -475,13 +515,13 @@ form input, form textarea {
     margin-top: 20px;
 }
 
-#cv i, #send i {
+#send i {
     color: #ff004f;
     font-size: 20px;
     transition: color 0.5s;
 }
 
-#cv:hover i, #send:hover i {
+#send:hover i {
     color: white;
 }
 
@@ -502,6 +542,7 @@ form input, form textarea {
     text-align: center;
     padding: 25px;
     background: #262626;
+    font-family: sans-serif;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -566,7 +607,7 @@ form input, form textarea {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
     #header {
         background-image: url(Images/My\ Logo\ 1.png);
         background-size: cover;
@@ -577,8 +618,12 @@ form input, form textarea {
     .containeralpha {
         width: 100%;
         padding: 0px 10%;
-        display: inline-block;
         text-align: center;
+        display: inline-block;
+    }
+
+    .container {
+        padding: 0px 7% 10px;
     }
 
     #headertandi {
@@ -605,8 +650,13 @@ form input, form textarea {
     }
 
     .header-text h1 {
-        font-size: 30px;
-        margin: 5px 0;
+        font-size: 50px;
+        font-weight: 500;
+        margin: 10px 0 5px;
+    }
+
+    #moved:hover {
+        color: #ff004f;
     }
 
     .header-img {
@@ -688,12 +738,21 @@ form input, form textarea {
     }
 
     .tab-links {
-        font-size: 18px;
+        font-size: 25px;
         margin-right: 20px;
     }
 
     .services-list div {
         width: 70%;
+    }
+
+    .layer .work-description, .revLayer .work-description{
+        flex-basis: 80%;
+        padding: 20px;
+    }
+
+    #sWorkLinks a {
+        display: none;
     }
 
     .contact-left {
@@ -702,10 +761,6 @@ form input, form textarea {
 
     .contact-right {
         flex-basis: 60%;
-    }
-
-    #moveu {
-        margin: 50px auto 10px;
     }
 
     #moveu:hover {
@@ -717,25 +772,59 @@ form input, form textarea {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .header-text {
+        top: 36%;
+    }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .header-text {
         top: 36%;
+    }
+
+    .header-text h1 {
+        font-size: 37px;
     }
 
     .container {
         padding: 0px 5% 10px;
     }
 
+    .layer, .revLayer {
+        flex-direction: column;
+    }
+
+    .layer .work-description, .revLayer .work-description {
+        align-items: flex-start;
+    }
+    
+    .workLinks {
+        margin-bottom: 30px;
+    }
+
+    #contactRow {
+        gap: 50px;
+    }
+
     .contact-left, .contact-right {
         flex-basis: 100%;
+    }
+
+    .contact-left p {
+        font-size: 20px;
+    }
+
+    #moveu {
+        margin: 50px auto 10px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .layer .work-trailer {
-        height: 160px;
-    }
-
     .layer h3 {
         font-size: 24px;
     }
@@ -743,7 +832,7 @@ form input, form textarea {
 
 @media screen and (max-width: 600px) {
     .header-text {
-        top: 31%;
+        top: 28%;
         width: 80%;
         padding: 20px 20px 10px;
     }
@@ -782,14 +871,22 @@ form input, form textarea {
 }
 
 @media screen and (max-width: 400px) {
-    .contact-left p {
-        font-size: 16px;
+    .btn {
+        padding: 14px 45px;
     }
 }
 
 @media screen and (max-width: 380px) {
     .header-text {
         top: 28%;
+    }
+
+    .header-text h1 {
+        font-size: 33px;
+    }
+
+    .contact-left p {
+        font-size: 19.5px;
     }
 }
 
@@ -832,12 +929,8 @@ form input, form textarea {
         font-size: 14px;
     }
 
-    .tab-titles {
-        justify-content: center;
-    }
-
     .tab-links {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .tab-contents ul li {
@@ -861,14 +954,10 @@ form input, form textarea {
     }
 
     .contact-left p {
-        font-size: 0.85rem;
+        font-size: 14px;
     }
 
     .contact-left p i {
         font-size: 20px;
-    }
-
-    .contact-left, .contact-right {
-        text-align: center;
     }
 }
