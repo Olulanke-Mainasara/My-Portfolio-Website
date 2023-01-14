@@ -74,7 +74,7 @@
 
                 <div class="about-col-2" id="about-text" data-aos="fade-left" data-aos-duration="1500">
                     <h1 class="sub-title">About <span>me</span></h1>
-                    <p class="sub-title-p">Hello! My name is Mainasara and I'm a passionate Front-end Developer with the aim of bringing imaginations and ideas to life digitally. I'm always curious and I really love to find out the "Why" of things and concepts. I'm very well able to build functional web applications and easily convert UI designs into pixel perfect responsive web pages. I am a fast learner, a dilligent worker and can adapt to a new technology as quickly as the need may be. My aim is to one day be able to stand among the great creators who have made an impact in the big and little they have done, starting from anything as little as a landing page to big things like a fully functional responsive web application.</p>
+                    <p class="sub-title-p">My name is Mainasara and I'm a passionate Front-end Developer with the aim of bringing imaginations and ideas to life digitally. I'm always curious and I really love to find out the "Why" of things and concepts. I'm very well able to build functional web applications and easily convert UI designs into pixel perfect responsive web pages. I am a fast learner, a dilligent worker and can adapt to a new technology as quickly as the need may be. My aim is to one day be able to stand among the great creators who have made an impact in the big and little they have done, starting from anything as little as a landing page to big things like a fully functional responsive web application.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -286,10 +286,11 @@
 
                 <div class="contact-right" data-aos="fade-up" data-aos-duration="1500">
                     <form name="Contacts" action="success-page.html" method="POST" data-netlify="true">
-                        <input type="text" name="Fullname" placeholder="Your Fullname" required>
+                        <input type="hidden" name="subject" value="Client contact from mainasara.netlify.app" />
+                        <input type="text" name="Full name" placeholder="Your Fullname" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message / Request" rows="10" placeholder="Your Message / Request"></textarea>
-                        <input type="submit" class="btn" id="send" value="Send message"></input>
+                        <button title="submit" type="submit" class="btn" id="send">Send message</button>
                     </form>
                     <span id="msg"></span>
                 </div>

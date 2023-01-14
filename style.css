@@ -81,6 +81,7 @@ nav ul li a {
     border-radius: 15px;
     text-decoration: none;
     color: white;
+    font-size: 18px;
     transition: background 0.5s;
 }
 
@@ -513,6 +514,8 @@ form input, form textarea {
 
 #send {
     margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 #send i {
