@@ -74,7 +74,7 @@
 
                 <div class="about-col-2" id="about-text" data-aos="fade-left" data-aos-duration="1500">
                     <h1 class="sub-title">About <span>me</span></h1>
-                    <p class="sub-title-p">My name is Mainasara and I'm a passionate Front-end Developer with the aim of bringing imaginations and ideas to life digitally. I'm always curious and I really love to find out the "Why" of things and concepts. I'm very well able to build functional web applications and easily convert UI designs into pixel perfect responsive web pages. I am a fast learner, a dilligent worker and can adapt to a new technology as quickly as the need may be. My aim is to one day be able to stand among the great creators who have made an impact in the big and little they have done, starting from anything as little as a landing page to big things like a fully functional responsive web application.</p>
+                    <p class="sub-title-p">Hi, my name is Mainasara and I'm a passionate Front-end Developer with the aim of bringing imaginations and ideas to life digitally. I'm always curious and I really love to find out the "Why" of things and concepts. I'm very well able to build functional web applications and easily convert UI designs into pixel perfect responsive web pages. I am a fast learner, a dilligent worker and can adapt to a new technology as quickly as the need may be. My aim is to one day be able to stand among the great creators who have made an impact in the big and little they have done, starting from anything as little as a landing page to big things like a fully functional responsive web application.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -307,58 +307,7 @@
 
     </section>
 
-    
-    <script>
-        /*---------------Script for the AOS API--------------*/
-
-        AOS.init();
-
-        /*---------------Script for changing the About me tabs--------------*/
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-content");
-            }
-
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-content"); 
-        }
-
-        /*---------------Script for bringing out and pushing in the Nav-menu for phone screens---------------*/
-
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu(){
-            sidemenu.style.right = "-300px";
-        }
-
-        /*--------------Script for changing some animation flows--------------*/
-
-        var works = document.querySelectorAll(".work");
-        var abouttext = document.getElementById("about-text");
-
-        if (window.innerWidth <= 1000) {
-            changeworkflow();
-        }
-
-        function changeworkflow() {
-            for(var i = 0; i < works.length; i++) {
-                works[i].setAttribute("data-aos", "fade-right");
-            }
-            abouttext.setAttribute("data-aos", "fade-right");
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
